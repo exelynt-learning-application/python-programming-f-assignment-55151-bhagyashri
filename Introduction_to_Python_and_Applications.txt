@@ -1,0 +1,133 @@
+Introduction to Python & Applications
+
+Assignment Title:
+Research and Explain Python Features
+
+------------------------------------------------------------
+
+1. What is Python?
+
+Python is a high-level, interpreted, and general-purpose programming language. It is designed to be simple, readable, and easy to learn. Python supports multiple programming paradigms including procedural, object-oriented, and functional programming.
+
+Python is widely used in web development, data science, artificial intelligence, automation, and many other fields.
+
+------------------------------------------------------------
+
+2. History of Python
+
+Python was created by Guido van Rossum in 1991 at CWI (Centrum Wiskunde & Informatica) in the Netherlands.
+
+The name “Python” was inspired by the British comedy show “Monty Python’s Flying Circus”.
+
+Major Milestones:
+- 1991 – First release
+- 2000 – Python 2.0 released
+- 2008 – Python 3.0 released
+- Today – One of the most popular programming languages worldwide
+
+------------------------------------------------------------
+
+3. Key Features of Python (With Examples)
+
+3.1 Simple and Easy to Read
+
+Python syntax is clear and similar to English.
+
+Example:
+print("Hello, World!")
+
+------------------------------------------------------------
+
+3.2 Interpreted Language
+
+Python executes code line by line, making debugging easier.
+
+Example:
+x = 10
+y = 5
+print(x + y)
+
+------------------------------------------------------------
+
+3.3 Object-Oriented Programming (OOP)
+
+Python supports classes and objects.
+
+Example:
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("John")
+print(s1.name)
+
+------------------------------------------------------------
+
+3.4 Cross-Platform Compatibility
+
+Python works on:
+- Windows
+- macOS
+- Linux
+
+You can write code once and run it anywhere.
+
+------------------------------------------------------------
+
+3.5 Large Standard Library
+
+Python provides many built-in modules.
+
+Example:
+import math
+print(math.sqrt(16))
+
+------------------------------------------------------------
+
+3.6 Strong Community Support
+
+Python has a large developer community and many third-party libraries such as:
+- NumPy
+- Pandas
+- Django
+- Flask
+- TensorFlow
+
+------------------------------------------------------------
+
+4. Real-World Applications of Python
+
+4.1 Web Development
+Used to build websites and web applications using frameworks like Django and Flask.
+
+4.2 Data Science & Data Analysis
+Used for data processing, analysis, and visualization using libraries such as Pandas and NumPy.
+
+4.3 Artificial Intelligence & Machine Learning
+Used to build AI models and intelligent systems using TensorFlow and Scikit-learn.
+
+4.4 Automation & Scripting
+Used to automate repetitive tasks such as file handling, sending emails, and web scraping.
+
+4.5 Game Development
+Used to create simple games using libraries like Pygame.
+
+4.6 Cybersecurity
+Used in ethical hacking, penetration testing, and network security analysis.
+
+------------------------------------------------------------
+
+5. Python Use Case Diagram
+
+                Python
+                   |
+   ---------------------------------
+   |        |        |        |     |
+ Web Dev   AI/ML   Data    Automation  Games
+                     Science
+
+------------------------------------------------------------
+
+Conclusion
+
+Python is a powerful, easy-to-learn programming language used across many industries. Its simplicity, readability, and strong ecosystem make it one of the most popular programming languages today.

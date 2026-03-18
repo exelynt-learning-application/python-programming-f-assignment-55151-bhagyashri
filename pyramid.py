@@ -6,42 +6,35 @@ def number_pyramid_analysis(n):
     total_sum = 0
     even_sum = 0
 
-    # Flag variable to stop all processing when a number greater than 10 is encountered
-    stop_processing = False
-
-    # Printing the pyramid
+    # Printing the pyramid with all numbers (no filtering here)
     print("\nNumber Pyramid:")
     for i in range(1, n + 1):
-        # If processing is stopped, break the outer loop as well
-        if stop_processing:
-            break
-
         # Printing leading spaces for alignment
         print(" " * (n - i), end="")  # Spaces to align the pyramid
         
         # Printing the numbers in each row
         for j in range(1, i + 1):
-            # Check for number greater than 10 and stop all processing
-            if j > 10:
-                stop_processing = True
-                break  # Break the inner loop when j > 10
+            print(j, end=" ")  # Printing the number in the current row
             
-            # Skip odd numbers and add to the sum only for even numbers
-            if j % 2 != 0:
-                continue  # Skip odd numbers
+            # Counting all numbers printed
+            total_numbers += 1  # Count all numbers printed
+            total_sum += j  # Add number to total sum
             
-            # Counting even numbers and adding to sums
-            total_numbers += 1  # Count every even number printed
-            total_sum += j  # Add even number to total sum
-            even_sum += j  # Add even number to even sum
-
-            print(j, end=" ")  # Printing the even number in the current row
-        
         # Move to the next line after each row
         print()
 
-    # Displaying analysis after pyramid and sum calculation
+    # After pyramid printing, calculate sums separately
     print("\nAnalysis of the Pyramid:")
+
+    # Calculate sum of even numbers while skipping odd numbers
+    for i in range(1, n + 1):
+        for j in range(1, i + 1):
+            if j > 10:  # Stop sum calculation if number exceeds 10
+                break
+            if j % 2 != 0:  # Skip odd numbers
+                continue
+            even_sum += j  # Add even number to even sum
+
     print(f"Total numbers printed: {total_numbers}")
     print(f"Sum of all numbers: {total_sum}")
     print(f"Sum of even numbers: {even_sum}")

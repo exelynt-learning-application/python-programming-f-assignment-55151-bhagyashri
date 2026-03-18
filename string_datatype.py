@@ -21,4 +21,4 @@ if "Alice" in message:
     print("Alice is in the message.")
 
 # String length: Calculating the length of the string
-print("Length of the message:", len(message))  # Output: Length of the message: 12
+print("Length of the message:", len(message))  # Output: Length of the message: 11

@@ -6,27 +6,36 @@ def number_pyramid_analysis(n):
     total_sum = 0
     even_sum = 0
 
+    # Flag variable to stop all processing when a number greater than 10 is encountered
+    stop_processing = False
+
     # Printing the pyramid
     print("\nNumber Pyramid:")
     for i in range(1, n + 1):
+        # If processing is stopped, break the outer loop as well
+        if stop_processing:
+            break
+
         # Printing leading spaces for alignment
         print(" " * (n - i), end="")  # Spaces to align the pyramid
         
         # Printing the numbers in each row
         for j in range(1, i + 1):
-            # Check for number greater than 10 and break out of the loop
+            # Check for number greater than 10 and stop all processing
             if j > 10:
-                break
+                stop_processing = True
+                break  # Break the inner loop when j > 10
             
-            print(j, end=" ")  # Printing the number in the current row
-            total_numbers += 1  # Count every number printed
-            total_sum += j  # Add number to the total sum
-            
-            # Skip odd numbers using continue and only add even numbers to even_sum
+            # Skip odd numbers and add to the sum only for even numbers
             if j % 2 != 0:
                 continue  # Skip odd numbers
             
-            even_sum += j  # Add even number to even_sum
+            # Counting even numbers and adding to sums
+            total_numbers += 1  # Count every even number printed
+            total_sum += j  # Add even number to total sum
+            even_sum += j  # Add even number to even sum
+
+            print(j, end=" ")  # Printing the even number in the current row
         
         # Move to the next line after each row
         print()

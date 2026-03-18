@@ -14,20 +14,22 @@ def number_pyramid_analysis(n):
         
         # Printing the numbers in each row
         for j in range(1, i + 1):
+            # Check for number greater than 10 and break out of the loop
+            if j > 10:
+                break
+            
             print(j, end=" ")  # Printing the number in the current row
             total_numbers += 1  # Count every number printed
             total_sum += j  # Add number to the total sum
             
-            # Sum of even numbers (skip odd numbers with continue)
-            if j % 2 == 0:
-                even_sum += j
+            # Skip odd numbers using continue and only add even numbers to even_sum
+            if j % 2 != 0:
+                continue  # Skip odd numbers
+            
+            even_sum += j  # Add even number to even_sum
         
         # Move to the next line after each row
         print()
-
-        # Use break to stop if a number greater than 10 is encountered
-        if i > 10:
-            break
 
     # Displaying analysis after pyramid and sum calculation
     print("\nAnalysis of the Pyramid:")

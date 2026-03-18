@@ -1,0 +1,68 @@
+Python Environment Setup Assignment
+
+1. **Download and Install Python:**
+   - Go to the official Python website: https://www.python.org/downloads/
+   - Download the latest version of Python for your operating system (Windows, macOS, Linux).
+   - Install Python by following the installation instructions. Ensure that you check the option to "Add Python to PATH" during installation.
+
+2. **Verify Python Installation:**
+   - Open your terminal or command prompt.
+   - Type the following command to verify Python is installed:
+     ```bash
+     python --version
+     ```
+   - Alternatively, use:
+     ```bash
+     python3 --version
+     ```
+   - You should see a response like: `Python 3.x.x`.
+
+3. **Install an IDE (VS Code or PyCharm):**
+   - **For VS Code:**
+     - Go to the official VS Code website: https://code.visualstudio.com/
+     - Download and install VS Code for your operating system.
+   - **For PyCharm:**
+     - Go to the official PyCharm website: https://www.jetbrains.com/pycharm/download/
+     - Download and install the Community version of PyCharm (free).
+
+4. **Configure Python Interpreter in IDE:**
+   - **In VS Code:**
+     - Open VS Code.
+     - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS).
+     - Type "Python: Select Interpreter" and select it.
+     - Choose the Python interpreter that you installed.
+   - **In PyCharm:**
+     - Open PyCharm.
+     - Go to `File` > `Settings` > `Project: <project_name>` > `Python Interpreter`.
+     - Choose your installed Python interpreter or add it if needed.
+
+5. **Run a Simple Python Command in Terminal/IDE:**
+   - Open your terminal or IDE’s terminal.
+   - Run the following Python command:
+     ```python
+     print("Hello, World!")
+     ```
+   - This should output: `Hello, World!`.
+
+6. **Provide Evidence:**
+   - Take screenshots of:
+     - Python version verification (`python --version`).
+     - Python interpreter configuration in the IDE.
+     - The output of running the Python command in the terminal or IDE.
+   
+7. **Commit and Push Files to GitHub:**
+   - Create a GitHub repository for your assignment.
+   - Upload the following files:
+     - `python_environment_setup.txt` (This text file with the instructions).
+     - `hello.py` (Python script with `print("Hello, World!")`).
+     - Screenshots of the Python installation verification, IDE configuration, and Python command output.
+
+   - Commit the changes and push them to the repository:
+     ```bash
+     git add .
+     git commit -m "Added Python environment setup details, hello.py script, and screenshots."
+     git push origin master
+     ```
+
+8. **Submit the Repository Link:**
+   - Once your files are pushed to GitHub, submit the repository link as proof of completing the assignment.
